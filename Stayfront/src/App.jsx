@@ -1,12 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import HotelDetails from './components/HotelDetails';
+ import './index.css'
+ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/hotel/:id" element={<HotelDetails />} />
+      </Routes>
+    </Router>
+  );
 }
+
+export default App;
