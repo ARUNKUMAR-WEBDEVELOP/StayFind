@@ -1,14 +1,10 @@
-from django.shortcuts import render
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
-import json, os
+import json
+from django.http import JsonResponse
+from django.conf import settings
+import os
 
-class HotelListView(APIView):
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request):
-        with open(os.path.join(os.path.dirname(__file__), 'data/hotels.json')) as f:
-            data = json.load(f)
-        return Response(data)
-
+def hotel_list(request):
+    file_path = os.path.join(settings.BASE_DIR, 'api', 'hotels.json')
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return JsonResponse(data, safe=False)

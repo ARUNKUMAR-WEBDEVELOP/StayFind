@@ -1,0 +1,1952 @@
+[
+  {
+    "id": 1,
+    "title": "Lakeside Serenity Resort",
+    "location": "Mumbai, India",
+    "place": "New Manali",
+    "price": 4028,
+    "rating": 4.2,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,1",
+    "details": "Lakeside Serenity Resort located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.4049,73.477",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User1",
+        "comment": "Great experience!",
+        "rating": 4.2
+      },
+      {
+        "user": "Guest1",
+        "comment": "Would stay again.",
+        "rating": 4.0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Riverfront Relaxation",
+    "location": "Shimla, India",
+    "place": "Mall Road",
+    "price": 5661,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,2",
+    "details": "Riverfront Relaxation located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=24.8953,74.798",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User2",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest2",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Urban Nest Studio",
+    "location": "Mumbai, India",
+    "place": "Baga Beach",
+    "price": 6815,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,3",
+    "details": "Urban Nest Studio located in Baga Beach, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=31.3598,74.8769",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User3",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest3",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Riverfront Relaxation",
+    "location": "Shimla, India",
+    "place": "Arambol",
+    "price": 4467,
+    "rating": 4.3,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,4",
+    "details": "Riverfront Relaxation located in Arambol, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=26.2739,72.7748",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User4",
+        "comment": "Great experience!",
+        "rating": 4.3
+      },
+      {
+        "user": "Guest4",
+        "comment": "Would stay again.",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Hilltop Hideaway",
+    "location": "Shimla, India",
+    "place": "Arambol",
+    "price": 5762,
+    "rating": 3.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,5",
+    "details": "Hilltop Hideaway located in Arambol, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=17.5125,72.1912",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User5",
+        "comment": "Great experience!",
+        "rating": 3.8
+      },
+      {
+        "user": "Guest5",
+        "comment": "Would stay again.",
+        "rating": 3.6
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Mountain Breeze Cottage",
+    "location": "Shimla, India",
+    "place": "Bandra",
+    "price": 2901,
+    "rating": 4.6,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,6",
+    "details": "Mountain Breeze Cottage located in Bandra, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.0576,74.956",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User6",
+        "comment": "Great experience!",
+        "rating": 4.6
+      },
+      {
+        "user": "Guest6",
+        "comment": "Would stay again.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Urban Nest Studio",
+    "location": "Manali, India",
+    "place": "Mall Road",
+    "price": 3445,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,7",
+    "details": "Urban Nest Studio located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=26.1051,76.9574",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User7",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest7",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Mountain Breeze Cottage",
+    "location": "Goa, India",
+    "place": "Colaba",
+    "price": 4164,
+    "rating": 4.2,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,8",
+    "details": "Mountain Breeze Cottage located in Colaba, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=17.8027,77.9457",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User8",
+        "comment": "Great experience!",
+        "rating": 4.2
+      },
+      {
+        "user": "Guest8",
+        "comment": "Would stay again.",
+        "rating": 4.0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Countryside Charm Villa",
+    "location": "Goa, India",
+    "place": "Lake Pichola",
+    "price": 4789,
+    "rating": 4.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,9",
+    "details": "Countryside Charm Villa located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=17.205,74.5937",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User9",
+        "comment": "Great experience!",
+        "rating": 4.9
+      },
+      {
+        "user": "Guest9",
+        "comment": "Would stay again.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Heritage Palace Stay",
+    "location": "Shimla, India",
+    "place": "New Manali",
+    "price": 3342,
+    "rating": 4.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,10",
+    "details": "Heritage Palace Stay located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.7935,76.2787",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User10",
+        "comment": "Great experience!",
+        "rating": 4.8
+      },
+      {
+        "user": "Guest10",
+        "comment": "Would stay again.",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Seaside Paradise Villa",
+    "location": "Goa, India",
+    "place": "Lake Pichola",
+    "price": 5408,
+    "rating": 4.5,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,11",
+    "details": "Seaside Paradise Villa located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=24.511,73.5527",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User11",
+        "comment": "Great experience!",
+        "rating": 4.5
+      },
+      {
+        "user": "Guest11",
+        "comment": "Would stay again.",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Urban Nest Studio",
+    "location": "Manali, India",
+    "place": "Old Manali",
+    "price": 6307,
+    "rating": 4.5,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,12",
+    "details": "Urban Nest Studio located in Old Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=26.5473,76.9183",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User12",
+        "comment": "Great experience!",
+        "rating": 4.5
+      },
+      {
+        "user": "Guest12",
+        "comment": "Would stay again.",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Heritage Palace Stay",
+    "location": "Udaipur, India",
+    "place": "Mall Road",
+    "price": 6221,
+    "rating": 3.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,13",
+    "details": "Heritage Palace Stay located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=31.3406,72.0827",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User13",
+        "comment": "Great experience!",
+        "rating": 3.8
+      },
+      {
+        "user": "Guest13",
+        "comment": "Would stay again.",
+        "rating": 3.6
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Heritage Palace Stay",
+    "location": "Shimla, India",
+    "place": "Panaji",
+    "price": 5264,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,14",
+    "details": "Heritage Palace Stay located in Panaji, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=25.1261,72.1468",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User14",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest14",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Mountain Breeze Cottage",
+    "location": "Manali, India",
+    "place": "New Manali",
+    "price": 4312,
+    "rating": 4.2,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,15",
+    "details": "Mountain Breeze Cottage located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=18.5983,73.2624",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User15",
+        "comment": "Great experience!",
+        "rating": 4.2
+      },
+      {
+        "user": "Guest15",
+        "comment": "Would stay again.",
+        "rating": 4.0
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Mountain Breeze Cottage",
+    "location": "Goa, India",
+    "place": "Baga Beach",
+    "price": 6401,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,16",
+    "details": "Mountain Breeze Cottage located in Baga Beach, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=28.1195,76.1664",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User16",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest16",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Jungle Retreat Bungalow",
+    "location": "Mumbai, India",
+    "place": "New Manali",
+    "price": 3289,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,17",
+    "details": "Jungle Retreat Bungalow located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=23.8558,74.5542",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User17",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest17",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Hilltop Hideaway",
+    "location": "Mumbai, India",
+    "place": "Lake Pichola",
+    "price": 2873,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,18",
+    "details": "Hilltop Hideaway located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=24.5326,74.7718",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User18",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest18",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Mountain Breeze Cottage",
+    "location": "Shimla, India",
+    "place": "New Manali",
+    "price": 6507,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,19",
+    "details": "Mountain Breeze Cottage located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=22.931,76.8722",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User19",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest19",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Countryside Charm Villa",
+    "location": "Udaipur, India",
+    "place": "Candolim",
+    "price": 3598,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,20",
+    "details": "Countryside Charm Villa located in Candolim, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=18.0833,74.5913",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User20",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest20",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Riverfront Relaxation",
+    "location": "Manali, India",
+    "place": "Lake Pichola",
+    "price": 6137,
+    "rating": 4.3,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,21",
+    "details": "Riverfront Relaxation located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=30.6843,74.2513",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User21",
+        "comment": "Great experience!",
+        "rating": 4.3
+      },
+      {
+        "user": "Guest21",
+        "comment": "Would stay again.",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "City View Apartment",
+    "location": "Manali, India",
+    "place": "New Manali",
+    "price": 6936,
+    "rating": 4.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,22",
+    "details": "City View Apartment located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=28.2539,73.7031",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User22",
+        "comment": "Great experience!",
+        "rating": 4.8
+      },
+      {
+        "user": "Guest22",
+        "comment": "Would stay again.",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "City View Apartment",
+    "location": "Goa, India",
+    "place": "Colaba",
+    "price": 3813,
+    "rating": 4.5,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,23",
+    "details": "City View Apartment located in Colaba, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=16.847,77.6512",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User23",
+        "comment": "Great experience!",
+        "rating": 4.5
+      },
+      {
+        "user": "Guest23",
+        "comment": "Would stay again.",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Seaside Paradise Villa",
+    "location": "Manali, India",
+    "place": "Colaba",
+    "price": 6928,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,24",
+    "details": "Seaside Paradise Villa located in Colaba, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=17.6806,73.2393",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User24",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest24",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Jungle Retreat Bungalow",
+    "location": "Manali, India",
+    "place": "Colaba",
+    "price": 2949,
+    "rating": 4.6,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,25",
+    "details": "Jungle Retreat Bungalow located in Colaba, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=28.7557,76.9228",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User25",
+        "comment": "Great experience!",
+        "rating": 4.6
+      },
+      {
+        "user": "Guest25",
+        "comment": "Would stay again.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Hilltop Hideaway",
+    "location": "Udaipur, India",
+    "place": "Panaji",
+    "price": 3458,
+    "rating": 4.3,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,26",
+    "details": "Hilltop Hideaway located in Panaji, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=21.5721,72.5362",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User26",
+        "comment": "Great experience!",
+        "rating": 4.3
+      },
+      {
+        "user": "Guest26",
+        "comment": "Would stay again.",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "City View Apartment",
+    "location": "Manali, India",
+    "place": "Baga Beach",
+    "price": 3249,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,27",
+    "details": "City View Apartment located in Baga Beach, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=24.2359,74.2581",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User27",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest27",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Jungle Retreat Bungalow",
+    "location": "Mumbai, India",
+    "place": "Bandra",
+    "price": 6447,
+    "rating": 4.4,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,28",
+    "details": "Jungle Retreat Bungalow located in Bandra, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=23.3784,72.042",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User28",
+        "comment": "Great experience!",
+        "rating": 4.4
+      },
+      {
+        "user": "Guest28",
+        "comment": "Would stay again.",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Riverfront Relaxation",
+    "location": "Manali, India",
+    "place": "Colaba",
+    "price": 3739,
+    "rating": 3.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,29",
+    "details": "Riverfront Relaxation located in Colaba, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=27.9253,76.7328",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User29",
+        "comment": "Great experience!",
+        "rating": 3.8
+      },
+      {
+        "user": "Guest29",
+        "comment": "Would stay again.",
+        "rating": 3.6
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "City View Apartment",
+    "location": "Mumbai, India",
+    "place": "Mall Road",
+    "price": 3799,
+    "rating": 4.3,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,30",
+    "details": "City View Apartment located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=16.886,76.6487",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User30",
+        "comment": "Great experience!",
+        "rating": 4.3
+      },
+      {
+        "user": "Guest30",
+        "comment": "Would stay again.",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Hilltop Hideaway",
+    "location": "Goa, India",
+    "place": "New Manali",
+    "price": 4495,
+    "rating": 4.4,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,31",
+    "details": "Hilltop Hideaway located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=27.0232,76.6987",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User31",
+        "comment": "Great experience!",
+        "rating": 4.4
+      },
+      {
+        "user": "Guest31",
+        "comment": "Would stay again.",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Countryside Charm Villa",
+    "location": "Manali, India",
+    "place": "Mall Road",
+    "price": 6813,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,32",
+    "details": "Countryside Charm Villa located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=22.6198,72.2734",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User32",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest32",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Jungle Retreat Bungalow",
+    "location": "Mumbai, India",
+    "place": "Bandra",
+    "price": 3624,
+    "rating": 4.6,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,33",
+    "details": "Jungle Retreat Bungalow located in Bandra, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=24.5005,74.1431",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User33",
+        "comment": "Great experience!",
+        "rating": 4.6
+      },
+      {
+        "user": "Guest33",
+        "comment": "Would stay again.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Mountain Breeze Cottage",
+    "location": "Shimla, India",
+    "place": "Panaji",
+    "price": 3085,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,34",
+    "details": "Mountain Breeze Cottage located in Panaji, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=16.5853,75.9456",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User34",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest34",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Lakeside Serenity Resort",
+    "location": "Shimla, India",
+    "place": "Candolim",
+    "price": 3486,
+    "rating": 4.1,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,35",
+    "details": "Lakeside Serenity Resort located in Candolim, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=21.9483,75.1875",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User35",
+        "comment": "Great experience!",
+        "rating": 4.1
+      },
+      {
+        "user": "Guest35",
+        "comment": "Would stay again.",
+        "rating": 3.9
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Urban Nest Studio",
+    "location": "Udaipur, India",
+    "place": "Mall Road",
+    "price": 4099,
+    "rating": 4.8,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,36",
+    "details": "Urban Nest Studio located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=21.7951,72.5595",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User36",
+        "comment": "Great experience!",
+        "rating": 4.8
+      },
+      {
+        "user": "Guest36",
+        "comment": "Would stay again.",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Heritage Palace Stay",
+    "location": "Mumbai, India",
+    "place": "Bandra",
+    "price": 2825,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,37",
+    "details": "Heritage Palace Stay located in Bandra, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=18.4794,77.0402",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User37",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest37",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Hilltop Hideaway",
+    "location": "Mumbai, India",
+    "place": "Lake Pichola",
+    "price": 5057,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,38",
+    "details": "Hilltop Hideaway located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=20.4183,76.1798",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User38",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest38",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Riverfront Relaxation",
+    "location": "Mumbai, India",
+    "place": "Mall Road",
+    "price": 5821,
+    "rating": 4.7,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,39",
+    "details": "Riverfront Relaxation located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=18.3442,73.6601",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User39",
+        "comment": "Great experience!",
+        "rating": 4.7
+      },
+      {
+        "user": "Guest39",
+        "comment": "Would stay again.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Seaside Paradise Villa",
+    "location": "Mumbai, India",
+    "place": "Mall Road",
+    "price": 5960,
+    "rating": 4.4,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,40",
+    "details": "Seaside Paradise Villa located in Mall Road, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.9304,76.5416",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User40",
+        "comment": "Great experience!",
+        "rating": 4.4
+      },
+      {
+        "user": "Guest40",
+        "comment": "Would stay again.",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Countryside Charm Villa",
+    "location": "Shimla, India",
+    "place": "Candolim",
+    "price": 6802,
+    "rating": 5.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,41",
+    "details": "Countryside Charm Villa located in Candolim, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.2985,75.3608",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User41",
+        "comment": "Great experience!",
+        "rating": 5.0
+      },
+      {
+        "user": "Guest41",
+        "comment": "Would stay again.",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Lakeside Serenity Resort",
+    "location": "Manali, India",
+    "place": "Baga Beach",
+    "price": 4606,
+    "rating": 4.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,42",
+    "details": "Lakeside Serenity Resort located in Baga Beach, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=31.0897,73.0287",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User42",
+        "comment": "Great experience!",
+        "rating": 4.9
+      },
+      {
+        "user": "Guest42",
+        "comment": "Would stay again.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "City View Apartment",
+    "location": "Shimla, India",
+    "place": "Lake Pichola",
+    "price": 6058,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,43",
+    "details": "City View Apartment located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=19.6574,77.9032",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User43",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest43",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Riverfront Relaxation",
+    "location": "Mumbai, India",
+    "place": "Arambol",
+    "price": 4716,
+    "rating": 4.6,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,44",
+    "details": "Riverfront Relaxation located in Arambol, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=30.3306,76.6311",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User44",
+        "comment": "Great experience!",
+        "rating": 4.6
+      },
+      {
+        "user": "Guest44",
+        "comment": "Would stay again.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Jungle Retreat Bungalow",
+    "location": "Goa, India",
+    "place": "Lake Pichola",
+    "price": 4200,
+    "rating": 4.0,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,45",
+    "details": "Jungle Retreat Bungalow located in Lake Pichola, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=23.4018,74.5151",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User45",
+        "comment": "Great experience!",
+        "rating": 4.0
+      },
+      {
+        "user": "Guest45",
+        "comment": "Would stay again.",
+        "rating": 3.8
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Mountain Breeze Cottage",
+    "location": "Manali, India",
+    "place": "Candolim",
+    "price": 4392,
+    "rating": 4.2,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,46",
+    "details": "Mountain Breeze Cottage located in Candolim, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=16.7066,72.3849",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User46",
+        "comment": "Great experience!",
+        "rating": 4.2
+      },
+      {
+        "user": "Guest46",
+        "comment": "Would stay again.",
+        "rating": 4.0
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Heritage Palace Stay",
+    "location": "Shimla, India",
+    "place": "Baga Beach",
+    "price": 5781,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,47",
+    "details": "Heritage Palace Stay located in Baga Beach, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=28.9216,75.7706",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User47",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest47",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Heritage Palace Stay",
+    "location": "Goa, India",
+    "place": "New Manali",
+    "price": 4500,
+    "rating": 4.6,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,48",
+    "details": "Heritage Palace Stay located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=31.9015,73.7848",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User48",
+        "comment": "Great experience!",
+        "rating": 4.6
+      },
+      {
+        "user": "Guest48",
+        "comment": "Would stay again.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Urban Nest Studio",
+    "location": "Shimla, India",
+    "place": "Arambol",
+    "price": 5597,
+    "rating": 3.9,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,49",
+    "details": "Urban Nest Studio located in Arambol, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=21.2339,77.6291",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User49",
+        "comment": "Great experience!",
+        "rating": 3.9
+      },
+      {
+        "user": "Guest49",
+        "comment": "Would stay again.",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Riverfront Relaxation",
+    "location": "Udaipur, India",
+    "place": "New Manali",
+    "price": 6914,
+    "rating": 4.5,
+    "imageUrl": "https://source.unsplash.com/800x600/?hotel,room,50",
+    "details": "Riverfront Relaxation located in New Manali, offers premium stay experience with modern amenities and scenic views.",
+    "mapUrl": "https://www.google.com/maps?q=20.2413,76.859",
+    "calendar": {
+      "availableDates": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10"
+      ],
+      "bookedDates": [
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03"
+      ]
+    },
+    "reviews": [
+      {
+        "user": "User50",
+        "comment": "Great experience!",
+        "rating": 4.5
+      },
+      {
+        "user": "Guest50",
+        "comment": "Would stay again.",
+        "rating": 4.3
+      }
+    ]
+  }
+]
