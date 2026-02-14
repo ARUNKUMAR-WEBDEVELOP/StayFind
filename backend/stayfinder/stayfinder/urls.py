@@ -15,10 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from api.views import hotel_list  # ✅ Import this view
+from django.urls import path,include
+# from api.views import HotelListView  # ✅ Import this view
+# import api.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/hotels/', hotel_list),  # ✅ API endpoint
+    # path('hotels/',HotelView.as_views),  # ✅ API endpoint
+    path('auth/', include('social_django.urls', namespace='social')),
+    path('api/', include('api.urls')),
+    
+    # path('api/auth/', include('dj_rest_auth.urls')),
+    # path('api/auth/registration/', include('dj_rest_auth.registration.urls')),
+    # path('api/auth/', include('allauth.socialaccount.urls')),
 ]
