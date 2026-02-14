@@ -1,0 +1,3 @@
+# Secrets
+/backend/stayfinder/.env
+/backend/stayfinder/firebase-service-account.json
