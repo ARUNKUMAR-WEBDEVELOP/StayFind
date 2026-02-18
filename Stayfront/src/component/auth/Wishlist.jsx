@@ -64,7 +64,7 @@ export const Wishlist = () => {
   const removeFromWishlist = async (hotelId) => {
     setRemoving(hotelId);
     try {
-      const res = await fetch(`https://stayfind.onrender.com/api/wishlist/${hotelId}/", {
+      const res = await fetch(`https://stayfind.onrender.com/api/wishlist/${hotelId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

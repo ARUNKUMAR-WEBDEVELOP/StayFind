@@ -47,7 +47,7 @@ export const MyCart = () => {
   const handleRemoveFromCart = async (hotelId) => {
     setRemoving(hotelId);
     try {
-      const response = await fetch(`https://stayfind.onrender.com/api/cart/${hotelId}/", {
+      const response = await fetch(`https://stayfind.onrender.com/api/cart/${hotelId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
