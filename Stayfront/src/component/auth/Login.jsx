@@ -70,7 +70,7 @@ const sendOtp = async () => {
     const result = await window.confirmationResult.confirm(otp);
     const idToken = await result.user.getIdToken();
 
-    const response = await fetch("http://localhost:8000/api/firebase-login/", {
+    const response = await fetch("https://stayfind.onrender.com/api/firebase-login/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ idToken }),
@@ -93,7 +93,7 @@ const sendOtp = async () => {
   // 🧠 Google Login flow
   const handleGoogle = async (res) => {
     try {
-      const response = await fetch("http://localhost:8000/api/google_login/", {
+      const response = await fetch("https://stayfind.onrender.com/api/google_login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // Authorization: `Bearer ${token}`,

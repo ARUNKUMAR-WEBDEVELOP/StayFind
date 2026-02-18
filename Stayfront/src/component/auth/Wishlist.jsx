@@ -23,7 +23,7 @@ export const Wishlist = () => {
       return;
     }
 
-    fetch("http://localhost:8000/api/wishlist/view/", {
+    fetch("https://stayfind.onrender.com/api/wishlist/view/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -45,7 +45,7 @@ export const Wishlist = () => {
 
   const addToCart = async (hotel) => {
     try {
-      const res = await fetch("http://localhost:8000/api/cart/", {
+      const res = await fetch("https://stayfind.onrender.com/api/cart/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ export const Wishlist = () => {
   const removeFromWishlist = async (hotelId) => {
     setRemoving(hotelId);
     try {
-      const res = await fetch(`http://localhost:8000/api/wishlist/${hotelId}/`, {
+      const res = await fetch(`https://stayfind.onrender.com/api/wishlist/${hotelId}/", {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

@@ -22,9 +22,9 @@ export const MyAccount = () => {
 
       try {
         const [wishesRes, cartRes, bookingRes] = await Promise.all([
-          fetch("http://localhost:8000/api/wishlist/view/", { headers }),
-          fetch("http://localhost:8000/api/cart/view/", { headers }),
-          fetch("http://localhost:8000/api/booking/view/", { headers }),
+          fetch("https://stayfind.onrender.com/api/wishlist/view/", { headers }),
+          fetch("https://stayfind.onrender.com/api/cart/view/", { headers }),
+          fetch("https://stayfind.onrender.com/api/booking/view/", { headers }),
         ]);
 
         setWishlist(await wishesRes.json());

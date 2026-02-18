@@ -24,7 +24,7 @@ export const MyCart = () => {
     }
 
     setLoading(true);
-    fetch("http://localhost:8000/api/cart/view/", {
+    fetch("https://stayfind.onrender.com/api/cart/view/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -47,7 +47,7 @@ export const MyCart = () => {
   const handleRemoveFromCart = async (hotelId) => {
     setRemoving(hotelId);
     try {
-      const response = await fetch(`http://localhost:8000/api/cart/${hotelId}/`, {
+      const response = await fetch(`https://stayfind.onrender.com/api/cart/${hotelId}/", {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

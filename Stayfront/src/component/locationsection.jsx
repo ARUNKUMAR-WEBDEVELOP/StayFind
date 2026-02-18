@@ -25,7 +25,7 @@ const LocationSection = ({ location, hotels = [] }) => {
 
     setLoadingId(hotelId);
     try {
-      const res = await fetch("http://localhost:8000/api/cart/", {
+      const res = await fetch("https://stayfind.onrender.com/api/cart/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const LocationSection = ({ location, hotels = [] }) => {
 
     setLoadingId(hotelId);
     try {
-      const res = await fetch("http://localhost:8000/api/wishlist/", {
+      const res = await fetch("https://stayfind.onrender.com/api/wishlist/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

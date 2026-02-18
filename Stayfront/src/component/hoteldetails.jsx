@@ -5,7 +5,7 @@ import { FaHeart, FaShoppingCart, FaBookOpen, FaMapMarkerAlt } from "react-icons
 import Navbar from "./auth/Navbar";
 import Toast from "./common/Toast";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://stayfind.onrender.com";
 
 const HotelDetails = () => {
   const { state } = useLocation();

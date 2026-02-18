@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import { FaHeart, FaUserCircle, FaBars, FaTimes, FaShoppingCart } from "react-icons/fa";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://stayfind.onrender.com";
 
 export const Navbar = () => {
   const { user, logout } = useAuth();

@@ -4,7 +4,7 @@ import LocationSection from './locationsection';
 import Navbar from './auth/Navbar';
 import Toast from './common/Toast';
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://stayfind.onrender.com";
 
 const Homepage = () => {
   const location = useLocation();

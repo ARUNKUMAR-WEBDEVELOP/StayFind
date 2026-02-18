@@ -121,7 +121,7 @@ export const PaymentGateway = () => {
       const token = localStorage.getItem("authToken");
 
       // Step 1: Create payment order with backend
-      const orderResponse = await fetch("http://127.0.0.1:8000/api/payment/create-order/", {
+      const orderResponse = await fetch("https://stayfind.onrender.com/api/payment/create-order/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -165,7 +165,7 @@ export const PaymentGateway = () => {
         handler: async (response) => {
           // Step 3: Verify payment with backend
           try {
-            const verifyResponse = await fetch("http://127.0.0.1:8000/api/payment/verify/", {
+            const verifyResponse = await fetch("https://stayfind.onrender.com/api/payment/verify/", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -209,7 +209,7 @@ export const PaymentGateway = () => {
             setProcessing(false);
 
             // Record payment failure
-            await fetch("http://127.0.0.1:8000/api/payment/failed/", {
+            await fetch("https://stayfind.onrender.com/api/payment/failed/", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -228,7 +228,7 @@ export const PaymentGateway = () => {
             setToast({ message: "Payment cancelled", type: "warning" });
             
             // Record payment failure
-            await fetch("http://127.0.0.1:8000/api/payment/failed/", {
+            await fetch("https://stayfind.onrender.com/api/payment/failed/", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
