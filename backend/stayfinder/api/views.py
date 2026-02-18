@@ -13,6 +13,18 @@ from .razorpay_utils import create_razorpay_order, verify_razorpay_payment
 from .email_utils import send_booking_confirmation_email, send_payment_confirmation_to_owner, send_payment_failure_email
 # from .serializers import , UserCartSerializer, UserWishlistSerializer
 
+# Health check endpoint for Render/load balancers
+@api_view(['GET', 'HEAD'])
+@permission_classes([AllowAny])
+def health_check(request):
+    """Health check endpoint for monitoring and load balancers"""
+    return Response({
+        "status": "ok",
+        "service": "StayFind API",
+        "version": "2.0"
+    }, status=200)
+
+
 # def HotelListView(request):
 #     file_path = os.path.join(settings.BASE_DIR, 'api', 'hotels.json')
 #     with open(file_path, 'r', encoding='utf-8') as f:

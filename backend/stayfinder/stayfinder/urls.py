@@ -15,17 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
-# from api.views import HotelListView  # ✅ Import this view
-# import api.views
+from django.urls import path, include
+from django.http import JsonResponse
+
+def root_health_check(request):
+    """Root health check for Render/load balancers"""
+    return JsonResponse({"status": "ok", "service": "StayFind API"})
 
 urlpatterns = [
+    path('', root_health_check, name='root-health-check'),
     path('admin/', admin.site.urls),
-    # path('hotels/',HotelView.as_views),  # ✅ API endpoint
     path('auth/', include('social_django.urls', namespace='social')),
     path('api/', include('api.urls')),
-    
-    # path('api/auth/', include('dj_rest_auth.urls')),
-    # path('api/auth/registration/', include('dj_rest_auth.registration.urls')),
-    # path('api/auth/', include('allauth.socialaccount.urls')),
 ]

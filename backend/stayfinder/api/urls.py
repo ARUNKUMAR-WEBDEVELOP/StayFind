@@ -20,11 +20,14 @@ from .views import (
     create_payment_order,
     verify_payment,
     payment_failed,
+    health_check,
 )
 from django.urls import path 
 
 urlpatterns = [
-    # path('hotels/', HotelListView, name='hotels'),
+    # Health check
+    path('health/', health_check, name='health-check'),
+    # Hotels
     path('hotels/', HotelListView.as_view(), name='hotels'),
     path("firebase-login/", FirebaseLoginView.as_view(), name="firebase_login"),
     path('google_login/', GoogleLoginView.as_view(), name='google_login'),
