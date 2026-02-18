@@ -1,0 +1,2 @@
+release: cd stayfinder && python manage.py migrate
+web: cd stayfinder && gunicorn stayfinder.wsgi --bind 0.0.0.0:$PORT

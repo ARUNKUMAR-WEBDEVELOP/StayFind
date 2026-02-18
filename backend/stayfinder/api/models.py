@@ -76,6 +76,18 @@ class Cart(models.Model):
         unique_together = ['user', 'hotel']
 
 class Booking(models.Model):
+    PAYMENT_METHOD_CHOICES = [
+        ('card', 'Debit/Credit Card'),
+        ('upi', 'UPI'),
+    ]
+    
+    PAYMENT_STATUS_CHOICES = [
+        ('pending', 'Pending'),
+        ('completed', 'Completed'),
+        ('failed', 'Failed'),
+        ('cancelled', 'Cancelled'),
+    ]
+    
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='bookings')
     hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
     check_in = models.DateField()
@@ -83,9 +95,13 @@ class Booking(models.Model):
     guest_count = models.IntegerField(default=1)
     guest_email = models.EmailField(max_length=255, null=True, blank=True)
     booking_token = models.CharField(max_length=50, unique=True, null=True, blank=True)
+    razorpay_order_id = models.CharField(max_length=100, unique=True, null=True, blank=True)
+    razorpay_payment_id = models.CharField(max_length=100, null=True, blank=True)
     total_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    payment_status = models.CharField(max_length=20, default="pending")
+    payment_status = models.CharField(max_length=20, choices=PAYMENT_STATUS_CHOICES, default="pending")
+    payment_method = models.CharField(max_length=10, choices=PAYMENT_METHOD_CHOICES, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"Booking {self.booking_token or self.id} - {self.user.username}"

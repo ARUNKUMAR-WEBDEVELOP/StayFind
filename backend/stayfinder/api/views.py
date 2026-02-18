@@ -9,7 +9,8 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth import authenticate
 from .models import Hotel, Wishlist, Cart, Booking, Review
 from .serializers import WishlistSerializer, CartSerializer, BookingSerializer, HotelSerializer, ReviewSerializer
-# from .serializers import WishlistSerializer, CartSerializer, BookingSerializer
+from .razorpay_utils import create_razorpay_order, verify_razorpay_payment
+from .email_utils import send_booking_confirmation_email, send_payment_confirmation_to_owner, send_payment_failure_email
 # from .serializers import , UserCartSerializer, UserWishlistSerializer
 
 # def HotelListView(request):
@@ -299,6 +300,185 @@ def get_bookings(request):
         for item in bookings
     ]
     return Response(data, status=status.HTTP_200_OK)
+
+
+# -------- Razorpay Payment Endpoints --------
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_payment_order(request):
+    """
+    Create a Razorpay order for payment
+    """
+    hotel_id = request.data.get("hotel_id")
+    total_amount = request.data.get("total_amount")
+    check_in = request.data.get("check_in")
+    check_out = request.data.get("check_out")
+    guest_count = request.data.get("guest_count", 1)
+    guest_email = request.data.get("guest_email")
+    payment_method = request.data.get("payment_method", "card")  # 'card' or 'upi'
+    
+    if not hotel_id or not total_amount:
+        return Response(
+            {"error": "Hotel ID and total amount are required"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    if not Hotel.objects.filter(id=hotel_id).exists():
+        return Response(
+            {"error": "Hotel not found"},
+            status=status.HTTP_404_NOT_FOUND
+        )
+    
+    # Generate a unique booking token
+    booking_token = f"STF-{int(request.user.id)}-{int(total_amount)}-{get_random_string(6).upper()}"
+    
+    # Create Razorpay order
+    order_response = create_razorpay_order(
+        amount=total_amount,
+        receipt=booking_token,
+        notes={
+            "hotel_id": hotel_id,
+            "user_id": request.user.id,
+            "check_in": str(check_in),
+            "check_out": str(check_out),
+            "guest_count": guest_count,
+            "payment_method": payment_method
+        }
+    )
+    
+    if not order_response.get("success"):
+        return Response(
+            {"error": "Failed to create payment order", "details": order_response.get("error")},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+    
+    # Create initial booking record with pending status
+    try:
+        hotel = Hotel.objects.get(id=hotel_id)
+        booking = Booking.objects.create(
+            user=request.user,
+            hotel=hotel,
+            check_in=check_in,
+            check_out=check_out,
+            guest_count=guest_count,
+            guest_email=guest_email,
+            booking_token=booking_token,
+            razorpay_order_id=order_response["order_id"],
+            total_amount=total_amount,
+            payment_status="pending",
+            payment_method=payment_method
+        )
+        
+        return Response({
+            "success": True,
+            "booking_id": booking.id,
+            "booking_token": booking.booking_token,
+            "razorpay_order_id": order_response["order_id"],
+            "amount": order_response["amount"],
+            "currency": order_response["currency"],
+            "razorpay_key": os.getenv("RAZORPAY_KEY_ID"),
+            "customer_name": request.user.get_full_name() or request.user.username,
+            "customer_email": guest_email or request.user.email,
+        }, status=status.HTTP_201_CREATED)
+        
+    except Exception as e:
+        return Response(
+            {"error": "Failed to create booking", "details": str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def verify_payment(request):
+    """
+    Verify Razorpay payment and update booking status
+    """
+    razorpay_payment_id = request.data.get("razorpay_payment_id")
+    razorpay_order_id = request.data.get("razorpay_order_id")
+    razorpay_signature = request.data.get("razorpay_signature")
+    booking_id = request.data.get("booking_id")
+    
+    if not all([razorpay_payment_id, razorpay_order_id, razorpay_signature, booking_id]):
+        return Response(
+            {"error": "Missing required payment verification fields"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    # Get booking
+    try:
+        booking = Booking.objects.get(id=booking_id, user=request.user)
+    except Booking.DoesNotExist:
+        return Response(
+            {"error": "Booking not found"},
+            status=status.HTTP_404_NOT_FOUND
+        )
+    
+    # Verify payment signature
+    secret_key = os.getenv("RAZORPAY_KEY_SECRET")
+    is_valid = verify_razorpay_payment(
+        razorpay_payment_id,
+        razorpay_order_id,
+        razorpay_signature,
+        secret_key
+    )
+    
+    if not is_valid:
+        booking.payment_status = "failed"
+        booking.save()
+        send_payment_failure_email(booking, booking.guest_email or booking.user.email, "Payment signature verification failed")
+        return Response(
+            {"error": "Payment verification failed"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    # Update booking with payment details
+    booking.payment_status = "completed"
+    booking.razorpay_payment_id = razorpay_payment_id
+    booking.save()
+    
+    # Send confirmation emails
+    customer_email = booking.guest_email or booking.user.email
+    send_booking_confirmation_email(booking, customer_email)
+    send_payment_confirmation_to_owner(booking)
+    
+    return Response({
+        "success": True,
+        "message": "Payment verified successfully",
+        "booking": BookingSerializer(booking).data
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def payment_failed(request):
+    """
+    Handle payment failure
+    """
+    booking_id = request.data.get("booking_id")
+    reason = request.data.get("reason", "Payment was not completed")
+    
+    try:
+        booking = Booking.objects.get(id=booking_id, user=request.user)
+    except Booking.DoesNotExist:
+        return Response(
+            {"error": "Booking not found"},
+            status=status.HTTP_404_NOT_FOUND
+        )
+    
+    # Update booking status
+    booking.payment_status = "failed"
+    booking.save()
+    
+    # Send failure email
+    customer_email = booking.guest_email or booking.user.email
+    send_payment_failure_email(booking, customer_email, reason)
+    
+    return Response({
+        "success": True,
+        "message": "Payment failure recorded"
+    }, status=status.HTTP_200_OK)
 
 
 @api_view(["GET", "POST"])

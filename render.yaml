@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stayfind-api
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: cd backend/stayfinder && pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: cd backend/stayfinder && gunicorn stayfinder.wsgi --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.11"

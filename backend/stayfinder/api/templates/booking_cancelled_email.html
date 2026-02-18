@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .header {
+        background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 0 8px 8px;
+      }
+      .alert-warning {
+        background-color: #fff3e0;
+        border: 1px solid #ffb74d;
+        color: #e65100;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 15px 0;
+        border-left: 4px solid #ff9800;
+      }
+      .booking-details {
+        background-color: #f0f4ff;
+        padding: 15px;
+        border-left: 4px solid #2196f3;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+      .detail-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .detail-row:last-child {
+        border-bottom: none;
+      }
+      .detail-label {
+        font-weight: bold;
+        color: #2196f3;
+      }
+      .detail-value {
+        font-weight: bold;
+        color: #333;
+      }
+      .refund-section {
+        background-color: #c8e6c9;
+        padding: 15px;
+        border-left: 4px solid #4caf50;
+        border-radius: 4px;
+        margin: 15px 0;
+      }
+      .refund-amount {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2e7d32;
+        text-align: center;
+      }
+      .reason-section {
+        background-color: #fff3e0;
+        padding: 15px;
+        border-left: 4px solid #ff9800;
+        border-radius: 4px;
+        margin: 15px 0;
+      }
+      .footer {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        font-size: 12px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚫 Booking Cancelled</h1>
+        <p>Your reservation has been cancelled</p>
+      </div>
+
+      <div class="content">
+        <p>Dear {{ customer_name }},</p>
+
+        <div class="alert-warning">
+          <strong>Booking Cancellation Confirmed</strong><br />
+          Your hotel reservation has been successfully cancelled.
+        </div>
+
+        <h2 style="color: #f57f17">Cancellation Details</h2>
+
+        <div class="booking-details">
+          <div class="detail-row">
+            <span class="detail-label">Hotel:</span>
+            <span class="detail-value">{{ hotel_name }}</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Booking Reference:</span>
+            <span class="detail-value">{{ booking_token }}</span>
+          </div>
+        </div>
+
+        {% if reason %}
+        <div class="reason-section">
+          <p><strong>Reason for Cancellation:</strong></p>
+          <p>{{ reason }}</p>
+        </div>
+        {% endif %}
+
+        <div class="refund-section">
+          <p style="margin: 0 0 10px 0; color: #1b5e20; font-weight: bold">
+            Refund Amount
+          </p>
+          <div class="refund-amount">₹{{ total_amount }}</div>
+          <p style="margin: 10px 0 0 0; color: #1b5e20; font-size: 12px">
+            The refund will be processed within 5-7 business days
+          </p>
+        </div>
+
+        <h2 style="color: #f57f17">What Happens Next?</h2>
+        <ul>
+          <li>Your booking has been permanently cancelled</li>
+          <li>
+            A full refund of ₹{{ total_amount }} will be issued to your original
+            payment method
+          </li>
+          <li>
+            The refund may take 5-7 business days to appear in your account
+          </li>
+          <li>
+            You will receive a confirmation email once the refund is processed
+          </li>
+        </ul>
+
+        <p>
+          If you have any questions about your cancellation or refund status,
+          please don't hesitate to contact us.
+        </p>
+
+        <p>We hope to host you in the future!</p>
+
+        <p>Best regards,<br />StayFind Team</p>
+
+        <div class="footer">
+          <p>
+            This is an automated email. Please do not reply directly to this
+            message.
+          </p>
+          <p>© 2026 StayFind. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -17,6 +17,9 @@ from .views import (
     hotel_detail,
     check_availability,
     hotel_reviews,
+    create_payment_order,
+    verify_payment,
+    payment_failed,
 )
 from django.urls import path 
 
@@ -39,6 +42,10 @@ urlpatterns = [
     path('cart/<int:hotel_id>/', remove_from_cart, name='remove-from-cart'),
     path('booking/',make_booking,name='make-booking'),
     path('booking/view/',get_bookings,name='add-to-cart'),
+    # Payment endpoints
+    path('payment/create-order/', create_payment_order, name='create-payment-order'),
+    path('payment/verify/', verify_payment, name='verify-payment'),
+    path('payment/failed/', payment_failed, name='payment-failed'),
 
     # # Cart
     # path("api/cart/", views.get_cart),

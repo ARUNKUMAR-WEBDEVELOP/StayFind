@@ -50,4 +50,4 @@ class BookingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Booking
-        fields = ['id', 'hotel', 'check_in', 'check_out', 'guest_count', 'guest_email', 'booking_token', 'total_amount', 'payment_status', 'created_at']
+        fields = ['id', 'hotel', 'check_in', 'check_out', 'guest_count', 'guest_email', 'booking_token', 'total_amount', 'payment_status', 'payment_method', 'razorpay_order_id', 'razorpay_payment_id', 'created_at', 'updated_at']
