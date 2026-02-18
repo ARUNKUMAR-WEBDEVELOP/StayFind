@@ -125,7 +125,7 @@ const sendOtp = async () => {
     const refresh = localStorage.getItem('refreshToken');
     if (!refresh) throw new Error('No refresh token');
 
-    const res = await fetch('/api/auth/token/refresh/', {
+    const res = await fetch('https://stayfind.onrender.com/api/auth/token/refresh/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ refresh })
