@@ -342,6 +342,29 @@ def create_payment_order(request):
             status=status.HTTP_404_NOT_FOUND
         )
     
+    # Check if user already has a completed booking for this hotel with overlapping dates
+    existing_user_booking = Booking.objects.filter(
+        user=request.user,
+        hotel_id=hotel_id,
+        payment_status='completed',
+        check_in__lt=check_out,
+        check_out__gt=check_in
+    ).first()
+    
+    if existing_user_booking:
+        return Response(
+            {
+                "error": "You already have a booking for this hotel during these dates",
+                "booking_token": existing_user_booking.booking_token,
+                "existing_booking": {
+                    "check_in": existing_user_booking.check_in,
+                    "check_out": existing_user_booking.check_out,
+                    "booking_date": existing_user_booking.created_at
+                }
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
     # Generate a unique booking token
     booking_token = f"STF-{int(request.user.id)}-{int(total_amount)}-{get_random_string(6).upper()}"
     
@@ -546,16 +569,56 @@ def hotel_detail(request, pk):
 
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def check_availability(request):
+    """
+    Check if a hotel is available for booking
+    - Checks if user already has a booking for this hotel
+    - Checks if hotel has availability for the requested dates
+    """
     hotel_id = request.data.get('hotel_id')
     check_in = request.data.get('check_in')
     check_out = request.data.get('check_out')
 
-    existing = Booking.objects.filter(
+    if not hotel_id or not check_in or not check_out:
+        return Response(
+            {'error': 'hotel_id, check_in, and check_out are required'},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    # Check if user already has a completed booking for this hotel
+    user_existing_booking = Booking.objects.filter(
+        user=request.user,
         hotel_id=hotel_id,
+        payment_status='completed',
         check_in__lt=check_out,
         check_out__gt=check_in
-    )
-    if existing.exists():
-        return Response({'available': False, 'message': 'Room not available for these dates'})
-    return Response({'available': True, 'message': 'Room available'})
+    ).first()
+    
+    if user_existing_booking:
+        return Response({
+            'available': False,
+            'reason': 'duplicate',
+            'message': f'You already have a booking for this hotel from {user_existing_booking.check_in} to {user_existing_booking.check_out}',
+            'booking_token': user_existing_booking.booking_token
+        })
+
+    # Check if hotel is available (other users' completed bookings)
+    other_bookings = Booking.objects.filter(
+        hotel_id=hotel_id,
+        payment_status='completed',
+        check_in__lt=check_out,
+        check_out__gt=check_in
+    ).exclude(user=request.user)
+    
+    if other_bookings.exists():
+        return Response({
+            'available': False,
+            'reason': 'occupied',
+            'message': 'Room not available for these dates - already booked by another guest'
+        })
+    
+    return Response({
+        'available': True,
+        'message': 'Room available for booking'
+    })
