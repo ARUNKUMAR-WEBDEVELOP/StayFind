@@ -569,12 +569,13 @@ def hotel_detail(request, pk):
 
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def check_availability(request):
     """
     Check if a hotel is available for booking
-    - Checks if user already has a booking for this hotel
-    - Checks if hotel has availability for the requested dates
+    - Public endpoint - works for both authenticated and anonymous users
+    - If authenticated: checks if user already has a booking for this hotel
+    - Always checks if hotel has availability for the requested dates
     """
     hotel_id = request.data.get('hotel_id')
     check_in = request.data.get('check_in')
@@ -586,32 +587,37 @@ def check_availability(request):
             status=status.HTTP_400_BAD_REQUEST
         )
 
-    # Check if user already has a completed booking for this hotel
-    user_existing_booking = Booking.objects.filter(
-        user=request.user,
-        hotel_id=hotel_id,
-        payment_status='completed',
-        check_in__lt=check_out,
-        check_out__gt=check_in
-    ).first()
-    
-    if user_existing_booking:
-        return Response({
-            'available': False,
-            'reason': 'duplicate',
-            'message': f'You already have a booking for this hotel from {user_existing_booking.check_in} to {user_existing_booking.check_out}',
-            'booking_token': user_existing_booking.booking_token
-        })
+    # If user is authenticated, check if they already have a booking
+    if request.user.is_authenticated:
+        user_existing_booking = Booking.objects.filter(
+            user=request.user,
+            hotel_id=hotel_id,
+            payment_status='completed',
+            check_in__lt=check_out,
+            check_out__gt=check_in
+        ).first()
+        
+        if user_existing_booking:
+            return Response({
+                'available': False,
+                'reason': 'duplicate',
+                'message': f'You already have a booking for this hotel from {user_existing_booking.check_in} to {user_existing_booking.check_out}',
+                'booking_token': user_existing_booking.booking_token
+            })
 
-    # Check if hotel is available (other users' completed bookings)
-    other_bookings = Booking.objects.filter(
+    # Check if hotel is available (any user's completed bookings)
+    existing_bookings = Booking.objects.filter(
         hotel_id=hotel_id,
         payment_status='completed',
         check_in__lt=check_out,
         check_out__gt=check_in
-    ).exclude(user=request.user)
+    )
     
-    if other_bookings.exists():
+    # If user is authenticated, exclude their own bookings
+    if request.user.is_authenticated:
+        existing_bookings = existing_bookings.exclude(user=request.user)
+    
+    if existing_bookings.exists():
         return Response({
             'available': False,
             'reason': 'occupied',
