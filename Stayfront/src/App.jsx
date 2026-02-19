@@ -15,7 +15,7 @@ import BookingTicket from "./component/auth/BookingTicket";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/StayFind/">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/hotel-details" element={<HotelDetails />} />
